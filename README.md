@@ -29,6 +29,33 @@ cd node-testes-jest
 yarn install
 ```
 
+## Inicializar o processo do Jest para criar o arquivo de configuração
 
+```bash
+yarn jest --init
+```
 
+### Configurações do Jest para este projeto
 
+```
+✔ It seems that you already have a jest configuration, do you want to override it? … yes
+
+✔ Would you like to use Typescript for the configuration file? … yes
+✔ Choose the test environment that will be used for testing › node
+✔ Do you want Jest to add coverage reports? … no
+✔ Which provider should be used to instrument code for coverage? › v8
+✔ Automatically clear mock calls, instances and results before every test? … yes
+```
+
+### Executando os testes
+
+```bash
+yarn jest --init
+```
+
+### Os arquivos de teste são
+* src/modules/createUser/CreateUserController.spec.ts
+* src/modules/createUser/CreateUserService.spec.ts
+
+### O arquivo de configuração do Prisma para os testes é
+* prisma/prisma-environment-jest.js
